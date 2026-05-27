@@ -1,0 +1,37 @@
+{
+  "name": "multi-tenant-saas-boilerplate",
+  "version": "1.0.0",
+  "description": "Multi-tenant SaaS boilerplate — Next.js 14 + TypeScript + Prisma + PostgreSQL",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@prisma/client": "^5.17.0",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.6.3",
+    "nanoid": "^5.0.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.14.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "prisma": "^5.17.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  },
+  "keywords": ["saas", "multi-tenant", "nextjs", "prisma", "postgresql", "swift-tech-co"],
+  "license": "MIT",
+  "homepage": "https://swifttechco.com/services/saas/saas-platform-development"
+}
